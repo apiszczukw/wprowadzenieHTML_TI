@@ -1,0 +1,107 @@
+﻿<h1> Formularze </h1>
+
+<form>
+	<label>Imię</label>
+	<input placeholder="Szary tekst" id="123" class="pola-rozowe" name="123" size="10" list="imiona"/>
+
+	<hr />
+	<input type="text" value="To można tylko czytać" readonly/>
+	<input type="text" value="To można tylko czytać" disabled/>
+	<hr />
+
+	<input type="datetime-local" max="2025-10-01T10:00" required/>
+	<br />
+	<input class="pola-rozowe" type="date" max="2025-10-01" />
+	<br />
+	<input type="time" />
+	<br />
+	<input type="month" />
+	<br />
+	<input type="week" />
+	<br />
+	<input type="color" />
+	<br />
+	<input type="file" />
+
+
+	<hr />
+	<hr />
+	<h3> Wybierz literę: </h3>
+	<input name="litery" type="radio" /> A
+	<input name="litery" type="radio" /> B
+	<input name="litery" type="radio" /> C
+
+	<br />
+	<h3> Wybierz cyfrę: </h3>
+	<input name="liczby" type="checkbox" /> 1
+	<input name="liczby" type="checkbox" /> 2
+	<input name="liczby" type="checkbox" /> 3
+
+	<br />
+	<input type="number" step="0.1" min="-10" max="10" />
+	<br />
+	<input type="range" min="1" max="10" step="1" list="os"/>
+	<br />
+
+	<select>
+		<optgroup label="Grupa 1">
+			<option>czerwony</option>
+			<option>zielony</option>
+		</optgroup>
+		<optgroup label="Grupa 2">
+			<option>żółty</option>
+			<option>czarny</option>
+		</optgroup>
+	</select>
+
+
+
+	<datalist id="imiona">
+		<option>Adam</option>
+		<option>Ala</option>
+		<option>Piotr</option>
+	</datalist>
+
+	<datalist id="os">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+	</datalist>
+
+	<hr />
+	<hr />
+	<input type="text" />
+	<br />
+	<input type="password" />
+	<br />
+	<input type="email" />
+	<br />
+	<input type="tel" pattern="^(\+48[\s-]?)?[0-9]{3}[\s-]?[0-9]{3}[\s-]?[0-9]{3}$" placeholder="np. 123-123-123" />
+	<br />
+	<input type="search" />
+
+	<input type="hidden" />
+
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+
+	<input type="button" value="Przycisk"/>
+	<input type="reset" />
+	<input type="submit" />
+
+	<br /> 
+	<button type="button"><b> Przycisk </b></button>
+	<button type="reset"> Wyczyść </button>
+	<button type="submit" class="pola-rozowe">Wyślij</button>
+</form>
+
+<hr />
