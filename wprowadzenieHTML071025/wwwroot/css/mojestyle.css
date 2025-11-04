@@ -35,7 +35,7 @@ th {
 
 /* Selektory proste */
 /* Id, klasa, element */
-/* inline > Id > element z klasy > klasa > element */
+/* inline > Id > element z klasy > klasa > element > uniwersalny */
 /* grupa selektorów = pojedynczy selektor */
 /* element z klasy */
 /* uniwersalny => * (gwiazdka) */
@@ -85,4 +85,68 @@ form ~ hr {
 
 #listy > hr {
     border: 2px dotted green;
+}
+
+/* Selektory pseudoklas */
+ol > li:hover {
+    color: cadetblue;
+}
+
+#email:hover {
+    background-color: black;
+    color: white;
+}
+
+#email:focus {
+    background-color: green;
+}
+
+input:required {
+    border: solid 5px red;
+}
+
+input:checked {
+    font-size: 40px;
+    color: red;
+}
+
+ul > li:first-child {
+    color: darkgreen;
+}
+
+:link {
+
+}
+
+:visited {
+
+}
+
+/* Selektory pseudo-elementów */
+li::selection {
+    background-color: aquamarine;
+    color: white;
+}
+
+ol > li::marker {
+    font-size: 40px;
+    color: hotpink;
+}
+
+ol > li:first-child::first-letter {
+    font-size: 60px;
+    color: red;
+}
+
+/* Selektory atrybutów */
+/* = dokładnie taka wartość */
+/* |= zaczyna się od słowa */
+/* ^= zaczyna się od ciągu znaków */
+/* ~= zawiera słowo */
+/* *= zawiera ciąg znaków */
+/* $= kończy się ciągiem znaków */
+
+input[type="search"]
+{
+    background-color: violet;
 }
